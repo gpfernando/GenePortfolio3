@@ -5,15 +5,16 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Image } from 'components/atoms';
 import { SectionHeader } from 'components/molecules';
 import { Section } from 'components/organisms';
+import { Grid, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    width: '100%',
-    height: '100%',
-    position: 'relative',
-    background: 'white',
-    overflow: 'hidden',
-  },
+  // root: {
+  //   width: '100%',
+  //   height: '100%',
+  //   position: 'relative',
+  //   background: 'white',
+  //   overflow: 'hidden',
+  // },
   image: {
     minHeight: 400,
     objectFit: 'cover',
@@ -24,9 +25,9 @@ const useStyles = makeStyles(theme => ({
   textWhite: {
     color: 'white',
   },
-  title: {
-    fontWeight: 'bold',
-  },
+  // title: {
+  //   fontWeight: 'bold',
+  // },
   section: {
     position: 'absolute',
     top: '50%',
@@ -35,6 +36,32 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 0,
     paddingBottom: 0,
   },
+  root: {
+    marginBottom: theme.spacing(3),
+    [theme.breakpoints.up('md')]: {
+      marginBottom: theme.spacing(4),
+    },
+  },
+  disableGutter: {
+    marginBottom: 0,
+  },
+  title: {
+    fontWeight: 'bold',
+  },
+  cta: {
+    marginLeft: theme.spacing(1),
+    '&:first-child': {
+      marginLeft: theme.spacing(0),
+    },
+  },
+  img: {
+    width:'100%',
+    margin: '0 auto',
+    maxWidth: 160,
+    // transform: 'translate3d(0, -50%, 0)',
+    boxShadow: '0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2)',
+    borderRadius: '50% !important',
+  }
 }));
 
 const Hero = props => {
@@ -43,26 +70,80 @@ const Hero = props => {
   return (
     <div className={clsx(classes.root, className)} {...rest}>
       <Image
-        src="/images/photos/about/hero-image.png"
-        srcSet="/images/photos/about/hero-image.png 2x"
+        src="/images/background/bokeh.jpg"
+        srcSet="/images/background/bokeh.jpg 2x"
         alt="About"
         className={classes.image}
       />
       <Section className={classes.section}>
-        <SectionHeader
-          title="Our work"
-          subtitle="We are founded by a leading academic and researcher in the field of Industrial Systems Engineering."
-          align="left"
-          data-aos="fade-up"
-          disableGutter
-          titleProps={{
-            className: clsx(classes.title, classes.textWhite),
-            variant: 'h3',
-          }}
-          subtitleProps={{
-            className: classes.textWhite,
-          }}
-        />
+        <Grid
+          container
+          spacing={2}
+          data-aos={'fade-up'}
+          className={clsx(
+            'section-header',
+            classes.root,
+            classes.disableGutter,
+            className,
+          )}
+          {...rest}
+        >
+          <Grid
+            item
+            xs={12}
+            className="section-header__title-wrapper"
+            align="center"
+          >
+            <img
+              src="/images/mypic.971afaf5.jpg"
+              alt="..."
+              className={clsx(classes.img)}
+            />
+          </Grid>
+
+          <Grid item xs={12} className="section-header__title-wrapper">
+            <Typography
+              variant={'h4'}
+              align={'center'}
+              className={clsx('section-header__title', classes.title, {})}
+              color="textPrimary"
+              {...{
+                className: clsx(classes.title, classes.textWhite),
+                variant: 'h3',
+              }}
+            >
+              Gene Fernando
+            </Typography>
+          </Grid>
+          <Grid item xs={12} className="section-header__subtitle-wrapper">
+            <Typography
+              variant={'h4'}
+              align={'center'}
+              color={'textSecondary'}
+              className="section-header__subtitle"
+              {...{
+                className: classes.textWhite,
+              }}
+            >
+              Full Stack Web Developer
+            </Typography>
+          </Grid>
+
+          <Grid item xs={12} className="section-header__subtitle-wrapper">
+            <Typography
+              variant={'h6'}
+              align={'center'}
+              color={'textSecondary'}
+              className="section-header__subtitle"
+              {...{
+                className: classes.textWhite,
+              }}
+            >
+              An accomplished leader with expert technical skills in Web
+              Development and extensive experience in program management.
+            </Typography>
+          </Grid>
+        </Grid>
       </Section>
     </div>
   );
@@ -76,3 +157,20 @@ Hero.propTypes = {
 };
 
 export default Hero;
+/* 
+ <SectionHeader
+          title="Gene Fernando"
+          subtitle="Full Stack Web Developer"
+          align="center"
+          data-aos="fade-up"
+          disableGutter
+          titleProps={{
+            className: clsx(classes.title, classes.textWhite),
+            variant: 'h3',
+          }}
+          subtitleProps={{
+            className: classes.textWhite,
+          }}
+        />
+      </Section> 
+  */

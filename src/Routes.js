@@ -5,49 +5,49 @@ import { RouteWithLayout } from './common';
 import { Main as MainLayout, Minimal as MinimalLayout } from './layouts';
 
 import {
-  Home as HomeView,
-  Agency as AgencyView,
-  CareerListing as CareerListingView,
-  CareerListingMinimal as CareerListingMinimalView,
-  CareerOpening as CareerOpeningView,
-  ContactPage as ContactPageView,
-  Coworking as CoworkingView,
-  Elearning as ElearningView,
-  Enterprise as EnterpriseView,
-  Service as ServiceView,
-  WebBasic as WebBasicView,
-  DesktopApp as DesktopAppView,
-  Expo as ExpoView,
-  Startup as StartupView,
-  DesignCompany as DesignCompanyView,
-  MobileApp as MobileAppView,
-  JobListing as JobListingView,
-  Rental as RentalView,
-  CloudHosting as CloudHostingView,
-  Logistics as LogisticsView,
-  Ecommerce as EcommerceView,
-  Pricing as PricingView,
-  About as AboutView,
-  HelpCenter as HelpCenterView,
-  HelpCenterArticle as HelpCenterArticleView,
+  // Home as HomeView,
+  // Agency as AgencyView,
+  // CareerListing as CareerListingView,
+  // CareerListingMinimal as CareerListingMinimalView,
+  // CareerOpening as CareerOpeningView,
+  // ContactPage as ContactPageView,
+  // Coworking as CoworkingView,
+  // Elearning as ElearningView,
+  // Enterprise as EnterpriseView,
+  // Service as ServiceView,
+  // WebBasic as WebBasicView,
+  // DesktopApp as DesktopAppView,
+  // Expo as ExpoView,
+  // Startup as StartupView,
+  // DesignCompany as DesignCompanyView,
+  // MobileApp as MobileAppView,
+  // JobListing as JobListingView,
+  // Rental as RentalView,
+  // CloudHosting as CloudHostingView,
+  // Logistics as LogisticsView,
+  // Ecommerce as EcommerceView,
+  // Pricing as PricingView,
+  // About as AboutView,
+  // HelpCenter as HelpCenterView,
+  // HelpCenterArticle as HelpCenterArticleView,
   PortfolioPage as PortfolioPageView,
-  PortfolioMasonry as PortfolioMasonryView,
-  PortfolioGrid as PortfolioGridView,
-  CompanyTerms as CompanyTermsView,
-  ContactPageSidebarMap as ContactPageSidebarMapView,
-  ContactPageCover as ContactPageCoverView,
-  AboutSideCover as AboutSideCoverView,
-  BlogSearch as BlogSearchView,
-  BlogNewsroom as BlogNewsroomView,
-  BlogArticle as BlogArticleView,
-  BlogReachView as BlogReachViewView,
-  PasswordResetCover as PasswordResetCoverView,
-  PasswordResetSimple as PasswordResetSimpleView,
-  SigninSimple as SigninSimpleView,
-  SigninCover as SigninCoverView,
-  SignupSimple as SignupSimpleView,
-  SignupCover as SignupCoverView,
-  Account as AccountView,
+  // PortfolioMasonry as PortfolioMasonryView,
+  // PortfolioGrid as PortfolioGridView,
+  // CompanyTerms as CompanyTermsView,
+  // ContactPageSidebarMap as ContactPageSidebarMapView,
+  // ContactPageCover as ContactPageCoverView,
+  // AboutSideCover as AboutSideCoverView,
+  // BlogSearch as BlogSearchView,
+  // BlogNewsroom as BlogNewsroomView,
+  // BlogArticle as BlogArticleView,
+  // BlogReachView as BlogReachViewView,
+  // PasswordResetCover as PasswordResetCoverView,
+  // PasswordResetSimple as PasswordResetSimpleView,
+  // SigninSimple as SigninSimpleView,
+  // SigninCover as SigninCoverView,
+  // SignupSimple as SignupSimpleView,
+  // SignupCover as SignupCoverView,
+  // Account as AccountView,
   NotFound as NotFoundView,
   NotFoundCover as NotFoundCoverView,
 } from './views';
@@ -57,12 +57,12 @@ const Routes = () => {
     <Switch>
       <Redirect exact from="/" to="/home" />
       <RouteWithLayout
-        component={HomeView}
+        component={PortfolioPageView}
         exact
         layout={MainLayout}
         path="/home"
       />
-      <RouteWithLayout
+      {/* <RouteWithLayout
         component={CareerListingView}
         exact
         layout={MainLayout}
@@ -133,8 +133,8 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/agency"
-      />
-      <RouteWithLayout
+      /> */}
+      {/* <RouteWithLayout
         component={StartupView}
         exact
         layout={MainLayout}
@@ -211,8 +211,8 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/portfolio-page"
-      />
-      <RouteWithLayout
+      /> */}
+      {/* <RouteWithLayout
         component={PortfolioMasonryView}
         exact
         layout={MainLayout}
@@ -313,7 +313,7 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/account/:pageId?"
-      />
+      /> */}
       <RouteWithLayout
         component={NotFoundView}
         exact

@@ -17,8 +17,13 @@ const Services = props => {
   return (
     <div className={clsx(classes.root, className)} data-aos="fade-up" {...rest}>
       <SectionHeader
-        title="What we do"
-        subtitle="We are a small agency of talented designers & developers. Unlike teams from big agencies, we will treat your project as ours. We will walk you through our smooth and simple process."
+        title="My Skills"
+        subtitle="              I am an accomplished leader with expert technical skills in Web
+        Development and extensive experience in program management.
+        I effectively design and maintain IT processes, infrastructure and
+        applications. My web application designs focus on a memorable
+        user experience. I specialize in creating effective user
+        interaction using React and Material-UI."
         subtitleProps={{
           variant: 'body1',
           color: 'textPrimary',

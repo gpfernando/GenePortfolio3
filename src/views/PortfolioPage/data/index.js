@@ -26,37 +26,37 @@ export const services = [
     icon: 'fas fa-laptop-code',
     title: 'Web Design',
     description:
-      'We design and develop beautiful, lightning fast, scalable, and marketing-focused websites tailored to grow your business.',
+      'I design and develop beautiful, lightning fast, scalable, and marketing-focused websites tailored to grow your business.',
   },
   {
     icon: 'fas fa-mobile-alt',
     title: 'UI / UX Design',
     description:
-      'We craft great user centered interfaces for web and mobile apps. We ensure to deliver intuitive and seamless experiences.',
+      'I craft great user centered interfaces for web and mobile apps to ensure delivery of intuitive and seamless experiences.',
   },
   {
     icon: 'far fa-lightbulb',
     title: 'Product Design',
     description:
-      'We help you to carefully improve your digital product to deliver a great user experience, grow its user base and increase retention.',
+      'I help you to carefully improve your digital product to deliver a great user experience, grow its user base and increase retention.',
   },
   {
     icon: 'fas fa-brain',
     title: 'Branding',
     description:
-      'We transform businesses into brands through high quality brand identity design.',
+      'I transform businesses into brands through high quality brand identity design.',
   },
   {
     icon: 'fas fa-rocket',
     title: 'Optimization',
     description:
-      'We help you optimize your website or mobile app to increase your conversion rates.',
+      'I help you optimize your website or mobile app to increase your conversion rates.',
   },
   {
     icon: 'fas fa-cogs',
     title: 'Automation',
     description:
-      'We help your business gain leverage and efficiency through smart automation.',
+      'I help your business gain leverage and efficiency through smart automation.',
   },
 ];
 

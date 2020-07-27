@@ -254,8 +254,8 @@ const Topbar = props => {
           <a href="/" title="thefront">
             <Image
               className={classes.logoImage}
-              src="/images/logos/logo.svg"
-              alt="thefront"
+              src="/images/qc_logo_sm.jpg"
+              alt="quarkcomputing"
               lazy={false}
             />
           </a>
@@ -263,7 +263,7 @@ const Topbar = props => {
         <div className={classes.flexGrow} />
         <Hidden smDown>
           <List className={classes.navigationContainer}>
-            {[landings, supportedPages, account].map((page, i) => (
+            {/* {[landings, supportedPages, account].map((page, i) => (
               <div key={page.id}>
                 <ListItem
                   aria-describedby={page.id}
@@ -308,7 +308,7 @@ const Topbar = props => {
                   <div>{renderPages(page.id)}</div>
                 </Popover>
               </div>
-            ))}
+            ))} */}
             <ListItem className={classes.listItem}>
               <Typography
                 variant="body1"
@@ -316,9 +316,45 @@ const Topbar = props => {
                 className={classes.listItemText}
                 component="a"
                 target="blank"
-                href="https://thefront-styleguide.maccarianagency.com/"
+                href="#my-company"
               >
-                Documentation
+                My Company
+              </Typography>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Typography
+                variant="body1"
+                color="textSecondary"
+                className={classes.listItemText}
+                component="a"
+                target="blank"
+                href="#my-skills"
+              >
+                My Skills
+              </Typography>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Typography
+                variant="body1"
+                color="textSecondary"
+                className={classes.listItemText}
+                component="a"
+                target="blank"
+                href="#projects"
+              >
+                Projects
+              </Typography>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Typography
+                variant="body1"
+                color="textSecondary"
+                className={classes.listItemText}
+                component="a"
+                target="blank"
+                href="#projects"
+              >
+                Education
               </Typography>
             </ListItem>
           </List>

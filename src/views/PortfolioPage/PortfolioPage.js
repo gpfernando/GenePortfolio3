@@ -19,7 +19,7 @@ const PortfolioPage = () => {
   return (
     <div className={classes.root}>
       <Hero />
-      <Section>
+      <Section id="my-company">
         <Folio data={folio} />
       </Section>
       <SectionAlternate>
