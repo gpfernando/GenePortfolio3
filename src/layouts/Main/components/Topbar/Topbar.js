@@ -254,7 +254,7 @@ const Topbar = props => {
           <a href="/" title="thefront">
             <Image
               className={classes.logoImage}
-              src="/images/qc_logo_sm.jpg"
+              src="/images/QC_logo_sm.jpg"
               alt="quarkcomputing"
               lazy={false}
             />
