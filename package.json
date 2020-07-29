@@ -12,8 +12,7 @@
     "prettier": "prettier --write '**/*.{js,css,html}'",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "assets": "rimraf ./public/images && cp-cli ./node_modules/thefront-assets/images ./public/images",
-    "postinstall": "npm run assets"
+    "assets": "rimraf ./public/images && cp-cli ./node_modules/thefront-assets/images ./public/images"
   },
   "eslintConfig": {
     "extends": "react-app"
