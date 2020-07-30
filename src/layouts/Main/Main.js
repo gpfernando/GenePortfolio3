@@ -12,11 +12,9 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Main = props => {
-  const { children } = props;
-
-  const classes = useStyles();
-
   const theme = useTheme();
+  const { children } = props;
+  const classes = useStyles();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });

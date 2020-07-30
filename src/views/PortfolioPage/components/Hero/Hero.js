@@ -61,6 +61,10 @@ const useStyles = makeStyles(theme => ({
     // transform: 'translate3d(0, -50%, 0)',
     boxShadow: '0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2)',
     borderRadius: '50% !important',
+  },
+  description: {
+    margin: '0 auto',
+    maxWidth: '75%'
   }
 }));
 
@@ -130,18 +134,20 @@ const Hero = props => {
           </Grid>
 
           <Grid item xs={12} className="section-header__subtitle-wrapper">
-            <Typography
-              variant={'h6'}
-              align={'center'}
-              color={'textSecondary'}
-              className="section-header__subtitle"
-              {...{
-                className: classes.textWhite,
-              }}
-            >
-              An accomplished leader with expert technical skills in Web
-              Development and extensive experience in program management.
-            </Typography>
+            <div className={classes.description}>
+              <Typography
+                variant={'h6'}
+                align={'center'}
+                color={'textSecondary'}
+                className="section-header__subtitle"
+                {...{
+                  className: classes.textWhite,
+                }}
+              >
+                An accomplished leader with expert technical skills in Web
+                Development and extensive experience in program management.
+              </Typography>
+            </div>
           </Grid>
         </Grid>
       </Section>

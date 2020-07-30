@@ -2,6 +2,7 @@ import React, { forwardRef, useState } from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { NavLink as RouterLink } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   AppBar,
@@ -86,7 +87,7 @@ const useStyles = makeStyles(theme => ({
     height: 28,
     [theme.breakpoints.up('md')]: {
       width: 120,
-      height: 32,
+      height: 65,
     },
   },
   logoImage: {
@@ -314,8 +315,7 @@ const Topbar = props => {
                 variant="body1"
                 color="textSecondary"
                 className={classes.listItemText}
-                component="a"
-                target="blank"
+                component={AnchorLink}
                 href="#my-company"
               >
                 My Company
@@ -326,8 +326,7 @@ const Topbar = props => {
                 variant="body1"
                 color="textSecondary"
                 className={classes.listItemText}
-                component="a"
-                target="blank"
+                component={AnchorLink}
                 href="#my-skills"
               >
                 My Skills
@@ -338,8 +337,7 @@ const Topbar = props => {
                 variant="body1"
                 color="textSecondary"
                 className={classes.listItemText}
-                component="a"
-                target="blank"
+                component={AnchorLink}
                 href="#projects"
               >
                 Projects
@@ -350,9 +348,8 @@ const Topbar = props => {
                 variant="body1"
                 color="textSecondary"
                 className={classes.listItemText}
-                component="a"
-                target="blank"
-                href="#projects"
+                component={AnchorLink}
+                href="#education"
               >
                 Education
               </Typography>

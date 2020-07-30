@@ -22,11 +22,13 @@ const PortfolioPage = () => {
       <Section id="my-company">
         <Folio data={folio} />
       </Section>
-      <SectionAlternate>
+      <SectionAlternate id="my-skills">
         <Services data={services} />
       </SectionAlternate>
-      <Features data={features} />
-      <Section>
+      <Section id="projects">
+        <Features data={features} />
+      </Section>
+      <Section id="education">
         <Gallery data={gallery} />
       </Section>
       <Divider />
