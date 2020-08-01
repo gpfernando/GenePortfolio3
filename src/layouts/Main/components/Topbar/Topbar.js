@@ -329,7 +329,7 @@ const Topbar = props => {
                 component={AnchorLink}
                 href="#my-skills"
               >
-                My Skills
+                Skills
               </Typography>
             </ListItem>
             <ListItem className={classes.listItem}>
@@ -352,6 +352,17 @@ const Topbar = props => {
                 href="#education"
               >
                 Education
+              </Typography>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Typography
+                variant="body1"
+                color="textSecondary"
+                className={classes.listItemText}
+                component={AnchorLink}
+                href="#Resume"
+              >
+                Resume
               </Typography>
             </ListItem>
           </List>

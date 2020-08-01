@@ -57,7 +57,7 @@ const Services = props => {
         ))}
         <Grid item container xs={12} justify="center">
           <Button variant="contained" size="large" color="primary">
-            hire us
+            hire me
           </Button>
         </Grid>
       </Grid>
