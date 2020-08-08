@@ -82,7 +82,7 @@ const Hero = props => {
       <Section className={classes.section}>
         <Grid
           container
-          spacing={2}
+          spacing={10}
           data-aos={'fade-up'}
           className={clsx(
             'section-header',
@@ -100,7 +100,7 @@ const Hero = props => {
           >
             <img
               src="/images/mypic.971afaf5.jpg"
-              alt="..."
+              alt="my pic"
               className={clsx(classes.img)}
             />
           </Grid>
@@ -121,7 +121,7 @@ const Hero = props => {
           </Grid>
           <Grid item xs={12} className="section-header__subtitle-wrapper">
             <Typography
-              variant={'h4'}
+              variant={'h4'  }
               align={'center'}
               color={'textSecondary'}
               className="section-header__subtitle"
@@ -136,7 +136,7 @@ const Hero = props => {
           <Grid item xs={12} className="section-header__subtitle-wrapper">
             <div className={classes.description}>
               <Typography
-                variant={'h6'}
+                variant={'h5'}
                 align={'center'}
                 color={'textSecondary'}
                 className="section-header__subtitle"
@@ -145,7 +145,7 @@ const Hero = props => {
                 }}
               >
                 An accomplished leader with expert technical skills in Web
-                Development and extensive experience in program management.
+                Development and extensive experience in Program Management
               </Typography>
             </div>
           </Grid>

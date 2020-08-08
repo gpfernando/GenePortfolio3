@@ -199,11 +199,11 @@ const Footer = props => {
             <List disablePadding>
               <ListItem disableGutters className={classes.logoContainerItem}>
                 <div className={classes.logoContainer}>
-                  <a href="/" title="thefront">
+                  <a href="/" title="Quark Computing">
                     <Image
                       className={classes.logoImage}
-                      src="/images/logos/logo-negative.svg"
-                      alt="thefront"
+                      src="/images/QC_logo_sm.jpg"
+                      alt="Quark"
                       lazy={false}
                     />
                   </a>
@@ -227,7 +227,7 @@ const Footer = props => {
           </Grid>
           <Grid item xs={12} md={10} className={classes.menuListContainer}>
             <Grid container spacing={0}>
-              <Grid item className={classes.listItem}>
+              {/* <Grid item className={classes.listItem}>
                 <LandingPages />
               </Grid>
               <Grid item className={classes.listItem}>
@@ -235,7 +235,7 @@ const Footer = props => {
               </Grid>
               <Grid item className={classes.listItem}>
                 <AccountPages />
-              </Grid>
+              </Grid> */}
             </Grid>
           </Grid>
         </Grid>
