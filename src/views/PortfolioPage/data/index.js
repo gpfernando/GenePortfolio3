@@ -1,23 +1,23 @@
 export const folio = [
   {
-    cover: '/images/photos/blog/cover1.jpg',
-    title: 'MAD CAP',
-    subtitle: 'The coffee company',
+    cover: '/images/angel.jpg',
+    title: 'Quark Computing',
+    subtitle: 'Caring for Seniors with Alzheimers',
   },
   {
-    cover: '/images/photos/blog/cover2.jpg',
-    title: 'ADIDAS',
-    subtitle: 'ALL DAY I DREAM ABOUT SPORT',
+    cover: '/images/pi.jpg',
+    title: 'Base Station',
+    subtitle: 'Raspberry Pi',
   },
   {
-    cover: '/images/photos/blog/cover4.jpg',
-    title: 'LARQ',
-    subtitle: 'BOTTLE REDESIGNED',
+    cover: '/images/cloud.jpg',
+    title: 'Cloud Computing',
+    subtitle: 'AI and Web Portal',
   },
   {
-    cover: '/images/photos/blog/cover3.jpg',
-    title: 'NIKE',
-    subtitle: 'Just do it',
+    cover: '/images/watch.jpg',
+    title: 'Wearable Sensors',
+    subtitle: 'Health Smartwatch',
   },
 ];
 

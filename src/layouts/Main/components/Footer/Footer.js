@@ -227,15 +227,18 @@ const Footer = props => {
           </Grid>
           <Grid item xs={12} md={10} className={classes.menuListContainer}>
             <Grid container spacing={0}>
-              {/* <Grid item className={classes.listItem}>
-                <LandingPages />
+               <Grid item className={classes.listItem}>
+               <Typography
+              className={clsx('section-header__title', classes.title, {})}
+              {...{
+                className: clsx(classes.title, classes.textWhite),
+                variant: 'h5', color: 'textSecondary', align: 'center',
+              }}
+            >
+             Quark Computing, founded by Gene Fernando, July 2019
+            </Typography>
+
               </Grid>
-              <Grid item className={classes.listItem}>
-                <SupportedPages />
-              </Grid>
-              <Grid item className={classes.listItem}>
-                <AccountPages />
-              </Grid> */}
             </Grid>
           </Grid>
         </Grid>
