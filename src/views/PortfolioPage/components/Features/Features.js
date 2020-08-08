@@ -46,8 +46,8 @@ const Features = props => {
         <Grid item container alignItems="center" xs={12} md={6}>
           <Section>
             <SectionHeader
-              title="Monitor and analyze usage patterns."
-              subtitle="Keep track of what's happening with your data, change permissions, and run reports against your data anywhere in the world."
+              title="Education and Training"
+              subtitle="A Well-Rounded Education Tempered by Experience with World Class Companies"
               align="left"
               data-aos="fade-up"
               titleProps={{

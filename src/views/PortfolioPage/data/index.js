@@ -61,47 +61,47 @@ export const services = [
 ];
 
 export const features = [
-  'Affordable, scalable and performant. The perfect solution for small apps.',
-  'A mid-sized solution for businesses undergoing rapid user growth.',
-  "A farm of machines entirely dedicated to your company's storage needs.",
-  'A mid-sized solution for businesses undergoing rapid user growth.',
+  'UC San Diego Extension: Web Development Certificate',
+  'USC (University of Southern California): MBA, Finance/MIS',
+  "UCI (University of California, Irvine: BS Biological Sciences",
+  'USD (University of San Diego) Business Incubator Program',
 ];
 
 export const gallery = [
   {
     cover: '/images/photos/blog/cover1.jpg',
-    title: 'MAD CAP',
-    subtitle: 'The coffee company',
+    title: 'Portfolio',
+    subtitle: 'Description',
     cols: 1,
   },
   {
     cover: '/images/photos/blog/cover2.jpg',
-    title: 'ADIDAS',
-    subtitle: 'ALL DAY I DREAM ABOUT SPORT',
+    title: 'Portfolio',
+    subtitle: 'Description',
     cols: 1,
   },
   {
     cover: '/images/photos/blog/cover4.jpg',
-    title: 'LARQ',
-    subtitle: 'BOTTLE REDESIGNED',
+    title: 'Portfolio',
+    subtitle: 'Description',
     cols: 1,
   },
   {
     cover: '/images/photos/blog/cover3.jpg',
-    title: 'NIKE',
-    subtitle: 'Just do it',
+    title: 'Portfolio',
+    subtitle: 'Description',
     cols: 1.5,
   },
   {
     cover: '/images/photos/blog/cover1.jpg',
-    title: 'MAD CAP',
-    subtitle: 'The coffee company',
+    title: 'Portfolio',
+    subtitle: 'Description',
     cols: 1.5,
   },
   {
     cover: '/images/photos/blog/cover2.jpg',
-    title: 'ADIDAS',
-    subtitle: 'ALL DAY I DREAM ABOUT SPORT',
+    title: 'Portfolio',
+    subtitle: 'Description',
     cols: 3,
   },
 ];
