@@ -32,7 +32,7 @@ const PortfolioPage = () => {
               className={clsx('section-header__title', classes.title, {})}
               {...{
                 className: clsx(classes.title, classes.textWhite),
-                variant: 'h3', color: 'textPrimary', align: 'center', gutterBottom: 'true',
+                variant: 'h4', color: 'textPrimary', align: 'center', gutterBottom: 'true',
               }}
             >
              My Company
@@ -50,7 +50,7 @@ const PortfolioPage = () => {
               className={clsx('section-header__title', classes.title, {})}
               {...{
                 className: clsx(classes.title, classes.textWhite),
-                variant: 'h3', color: 'textPrimary', align: 'center', gutterBottom: 'true',
+                variant: 'h4', color: 'textPrimary', align: 'center', gutterBottom: 'true',
               }}
             >
              Experience and Portfolio

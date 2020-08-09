@@ -24,8 +24,9 @@ import { Image } from 'components/atoms';
 const useStyles = makeStyles(theme => ({
   root: {
     boxShadow: 'none',
-    background: theme.palette.white,
-    borderBottom: `1px solid ${colors.grey[200]}`,
+    // background: theme.palette.white,
+    background: '#1b1642',
+    borderBottom: `1px solid ${colors.grey[800]}`,
   },
   flexGrow: {
     flexGrow: 1,
@@ -160,7 +161,7 @@ const Topbar = props => {
               component={CustomRouterLink}
               to={page.href}
               className={clsx(classes.navLink, 'submenu-item')}
-              color="textSecondary"
+              color="textSecondary "
               onClick={handleClose}
             >
               {page.title}
@@ -252,9 +253,10 @@ const Topbar = props => {
     >
       <Toolbar disableGutters className={classes.toolbar}>
         <div className={classes.logoContainer}>
-          <a href="/" title="thefront">
+          <a href="/" title="QuarkCommputing">
             <Image
               className={classes.logoImage}
+
               src="/images/QC_logo_sm.jpg"
               alt="quarkcomputing"
               lazy={false}
@@ -312,8 +314,8 @@ const Topbar = props => {
             ))} */}
             <ListItem className={classes.listItem}>
               <Typography
-                variant="body1"
-                color="textSecondary"
+                variant="subtitle1"
+                color="secondary"
                 className={classes.listItemText}
                 component={AnchorLink}
                 href="#my-company"
@@ -323,8 +325,8 @@ const Topbar = props => {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Typography
-                variant="body1"
-                color="textSecondary"
+                variant="subtitle1"
+                color="secondary"
                 className={classes.listItemText}
                 component={AnchorLink}
                 href="#my-skills"
@@ -334,8 +336,8 @@ const Topbar = props => {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Typography
-                variant="body1"
-                color="textSecondary"
+                variant="subtitle1"
+                color="secondary"
                 className={classes.listItemText}
                 component={AnchorLink}
                 href="#projects"
@@ -345,8 +347,8 @@ const Topbar = props => {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Typography
-                variant="body1"
-                color="textSecondary"
+                variant="subtitle1"
+                color="secondary"
                 className={classes.listItemText}
                 component={AnchorLink}
                 href="#education"
@@ -356,8 +358,8 @@ const Topbar = props => {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Typography
-                variant="body1"
-                color="textSecondary"
+                variant="subtitle1"
+                color="secondary"
                 className={classes.listItemText}
                 component={AnchorLink}
                 href="https://www.linkedin.com/in/gene-p-fernando/"
