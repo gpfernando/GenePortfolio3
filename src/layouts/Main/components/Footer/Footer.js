@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     padding: theme.spacing(6, 0),
     [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(12, 0),
+      padding: theme.spacing(6, 0),
     },
     background: '#1b1642',
   },

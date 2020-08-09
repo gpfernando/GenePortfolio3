@@ -360,7 +360,7 @@ const Topbar = props => {
                 color="textSecondary"
                 className={classes.listItemText}
                 component={AnchorLink}
-                href="#Resume"
+                href="https://www.linkedin.com/in/gene-p-fernando/"
               >
                 Resume
               </Typography>
