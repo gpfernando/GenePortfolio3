@@ -87,7 +87,7 @@ export const gallery = [
     cols: 1,
   },
   {
-    cover: '/images/ibm.jpeg',
+    cover: '/images/IBM.jpeg',
     title: 'IBM',
     subtitle: 'National Accounts Systems Engineer',
     cols: 1.5,
@@ -99,7 +99,7 @@ export const gallery = [
     cols: 1.5,
   },
   {
-    cover: '/images/alz.jpg',
+    cover: '/images/Alz.jpg',
     title: 'Quark Computing',
     subtitle: 'Founder and Principal Investigator',
     cols: 3,
