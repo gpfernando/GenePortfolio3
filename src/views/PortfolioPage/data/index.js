@@ -6,8 +6,8 @@ export const folio = [
   },
   {
     cover: '/images/pi.jpg',
-    title: 'Base Station',
-    subtitle: 'Raspberry Pi',
+    title: 'IoT Networks and Sensors',
+    subtitle: 'Particle mesh network and hubs',
   },
   {
     cover: '/images/cloud.jpg',

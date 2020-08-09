@@ -8,13 +8,13 @@ import { Section } from 'components/organisms';
 import { Grid, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
-  // root: {
-  //   width: '100%',
-  //   height: '100%',
-  //   position: 'relative',
-  //   background: 'white',
-  //   overflow: 'hidden',
-  // },
+  root: {
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+    background: 'white',
+    overflow: 'hidden',
+  },
   image: {
     minHeight: 400,
     objectFit: 'cover',
