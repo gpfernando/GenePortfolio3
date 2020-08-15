@@ -3,21 +3,25 @@ export const folio = [
     cover: '/images/angel.jpg',
     title: 'Quark Computing',
     subtitle: 'Caring for Seniors with Alzheimers',
+    url: 'https://www.quarkcomputing.org',
   },
   {
     cover: '/images/pi.jpg',
     title: 'IoT Networks and Sensors',
     subtitle: 'Particle mesh network and hubs',
+    url: 'www.quarkcomputing.org',
   },
   {
     cover: '/images/cloud.jpg',
     title: 'Cloud Computing',
     subtitle: 'AI and Web Portal',
+    url: 'www.quarkcomputing.org',
   },
   {
     cover: '/images/watch.jpg',
     title: 'Wearable Sensors',
     subtitle: 'Health Smartwatch',
+    url: 'www.quarkcomputing.org',
   },
 ];
 

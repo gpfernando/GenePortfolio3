@@ -2,7 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Button, colors } from '@material-ui/core';
+import {
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  Grid,
+  Button,
+  colors,
+  TextField,
+} from '@material-ui/core';
 import { SectionHeader, IconAlternate } from 'components/molecules';
 import { DescriptionListIcon } from 'components/organisms';
 
@@ -11,8 +21,17 @@ const useStyles = makeStyles(() => ({
 }));
 
 const Services = props => {
-  const { data, className, ...rest } = props;
   const classes = useStyles();
+  const { data, className, ...rest } = props;
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <div className={clsx(classes.root, className)} data-aos="fade-up" {...rest}>
@@ -56,9 +75,34 @@ const Services = props => {
           </Grid>
         ))}
         <Grid item container xs={12} justify="center">
-          <Button variant="contained" size="large" color="primary">
+          <Button variant="contained" size="large" color="primary" onClick={handleClickOpen}>
             hire me
           </Button>
+          <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+            <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+            <DialogContent>
+              <DialogContentText>
+                To subscribe to this website, please enter your email address here. We will send updates
+                occasionally.
+              </DialogContentText>
+              <TextField
+                autoFocus
+                margin="dense"
+                id="name"
+                label="Email Address"
+                type="email"
+                fullWidth
+              />
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={handleClose} color="primary">
+                Cancel
+              </Button>
+              <Button onClick={handleClose} color="primary">
+                Submit
+              </Button>
+            </DialogActions>
+          </Dialog>
         </Grid>
       </Grid>
     </div>

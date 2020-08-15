@@ -62,6 +62,7 @@ const useStyles = makeStyles(theme => ({
     flex: '0 0 auto',
     marginRight: theme.spacing(2),
     whiteSpace: 'nowrap',
+    color: 'lightgrey'
   },
   listItemIcon: {
     minWidth: 'auto',
@@ -361,7 +362,8 @@ const Topbar = props => {
                 variant="subtitle1"
                 color="secondary"
                 className={classes.listItemText}
-                component={AnchorLink}
+                component="a"
+                target="_blank"
                 href="https://www.linkedin.com/in/gene-p-fernando/"
               >
                 Resume

@@ -110,7 +110,7 @@ const Folio = props => {
                   >
                     {item.subtitle}
                   </Typography>
-                  <Button variant="outlined" color="secondary">
+                  <Button variant="outlined" color="secondary" href={item.url} target="_blank">
                     View more
                   </Button>
                 </div>
