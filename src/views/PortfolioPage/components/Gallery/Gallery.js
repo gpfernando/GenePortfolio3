@@ -92,7 +92,7 @@ const Gallery = props => {
                   >
                     {item.subtitle}
                   </Typography>
-                  <Button variant="contained" color="secondary">
+                  <Button variant="contained" color="secondary" href={item.url} target="_blank">
                     View more
                   </Button>
                 </div>

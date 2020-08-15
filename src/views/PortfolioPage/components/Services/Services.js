@@ -82,8 +82,7 @@ const Services = props => {
             <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
             <DialogContent>
               <DialogContentText>
-                To subscribe to this website, please enter your email address here. We will send updates
-                occasionally.
+                To inquire about retaining my services, please enter your email address here. I will in touch with you shortly.
               </DialogContentText>
               <TextField
                 autoFocus

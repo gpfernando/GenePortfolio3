@@ -35,8 +35,8 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 0,
   },
   logoContainer: {
-    width: 120,
-    height: 32,
+    width: 80,
+    height: 60,
   },
   logoImage: {
     width: '100%',
