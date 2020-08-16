@@ -210,18 +210,19 @@ const Footer = props => {
                 </div>
               </ListItem>
               <ListItem disableGutters>
-                <IconButton className={classes.socialIcon}>
+                <IconButton className={classes.socialIcon} href="https://genefernando.com">
                   <FacebookIcon className={classes.icon} />
+                  
                 </IconButton>
-                <IconButton className={classes.socialIcon}>
+                <IconButton className={classes.socialIcon} href="https://genefernando.com">
                   <InstagramIcon className={classes.icon} />
                 </IconButton>
-                <IconButton className={classes.socialIcon}>
+                <IconButton className={classes.socialIcon} href="https://genefernando.com">
                   <TwitterIcon className={classes.icon} />
                 </IconButton>
-                <IconButton className={classes.socialIcon}>
+                {/* <IconButton className={classes.socialIcon}>
                   <PinterestIcon className={classes.icon} />
-                </IconButton>
+                </IconButton> */}
               </ListItem>
             </List>
           </Grid>
