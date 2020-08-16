@@ -232,11 +232,24 @@ const Footer = props => {
               className={clsx('section-header__title', classes.title, {})}
               {...{
                 className: clsx(classes.title, classes.textWhite),
-                variant: 'h5', color: 'textSecondary', align: 'center',
+                variant: 'h4', color: 'textSecondary', align: 'center',
               }}
             >
              Quark Computing, founded by Gene Fernando, July 2019
             </Typography>
+
+               <Grid item className={classes.listItem}>
+               <Typography
+              className={clsx('section-header__title', classes.title, {})}
+              {...{
+                className: clsx(classes.title, classes.textWhite),
+                variant: 'h5', color: 'textSecondary', align: 'center',
+              }}
+            >
+             Contact me at: gfernando@quarkcomputing.org
+            </Typography>
+
+              </Grid>
 
               </Grid>
             </Grid>

@@ -255,9 +255,8 @@ const Topbar = props => {
       <Toolbar disableGutters className={classes.toolbar}>
         <div className={classes.logoContainer}>
           <a href="/" title="QuarkCommputing">
-            <Image
+            <Image  
               className={classes.logoImage}
-
               src="/images/QC_logo_sm.jpg"
               alt="quarkcomputing"
               lazy={false}

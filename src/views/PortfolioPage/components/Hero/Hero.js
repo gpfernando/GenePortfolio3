@@ -82,7 +82,7 @@ const Hero = props => {
       <Section className={classes.section}>
         <Grid
           container
-          spacing={10}
+          spacing={8}
           data-aos={'fade-up'}
           className={clsx(
             'section-header',
@@ -163,20 +163,4 @@ Hero.propTypes = {
 };
 
 export default Hero;
-/* 
- <SectionHeader
-          title="Gene Fernando"
-          subtitle="Full Stack Web Developer"
-          align="center"
-          data-aos="fade-up"
-          disableGutter
-          titleProps={{
-            className: clsx(classes.title, classes.textWhite),
-            variant: 'h3',
-          }}
-          subtitleProps={{
-            className: classes.textWhite,
-          }}
-        />
-      </Section> 
-  */
+
