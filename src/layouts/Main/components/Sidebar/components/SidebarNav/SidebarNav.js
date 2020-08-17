@@ -5,6 +5,7 @@ import { NavLink as RouterLink } from 'react-router-dom';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {
   List,
   ListItem,
@@ -166,6 +167,57 @@ const SidebarNav = props => {
         </ListItemIcon>
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Typography
+          variant="subtitle1"
+          color="textPrimary"
+          component={AnchorLink}
+          href="#my-company"
+        >
+          My Company
+        </Typography>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Typography
+          variant="subtitle1"
+          color="textPrimary"
+          component={AnchorLink}
+          href="#my-skills"
+        >
+          Skills
+        </Typography>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Typography
+          variant="subtitle1"
+          color="textPrimary"
+          component={AnchorLink}
+          href="#projects"
+        >
+          Projects
+        </Typography>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Typography
+          variant="subtitle1"
+          color="textPrimary"
+          component={AnchorLink}
+          href="#education"
+        >
+          Education
+        </Typography>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Typography
+          variant="subtitle1"
+          color="textPrimary"
+          component="a"
+          target="_blank"
+          href="https://www.linkedin.com/in/gene-p-fernando/"
+        >
+          Resume
+        </Typography>
+      </ListItem>
+      {/* <ListItem className={classes.listItem}>
         <Typography variant="h6" color="textPrimary" gutterBottom>
           Landings
         </Typography>
@@ -202,7 +254,7 @@ const SidebarNav = props => {
         >
           Documentation
         </Typography>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 };

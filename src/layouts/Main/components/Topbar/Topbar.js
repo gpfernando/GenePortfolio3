@@ -249,7 +249,7 @@ const Topbar = props => {
   return (
     <AppBar
       {...rest}
-      position="relative"
+      position="fixed"
       className={clsx(classes.root, className)}
     >
       <Toolbar disableGutters className={classes.toolbar}>
@@ -376,7 +376,7 @@ const Topbar = props => {
             onClick={onSidebarOpen}
             aria-label="Menu"
           >
-            <MenuIcon />
+            <MenuIcon color="secondary" />
           </IconButton>
         </Hidden>
       </Toolbar>

@@ -12,8 +12,14 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     height: '100%',
     position: 'relative',
-    background: 'white',
     overflow: 'hidden',
+    marginBottom: theme.spacing(3),
+    [theme.breakpoints.up('md')]: {
+      marginBottom: theme.spacing(4),
+    },
+    [theme.breakpoints.down('sm')]: {
+      marginTop: theme.spacing(7),
+    },
   },
   image: {
     minHeight: 400,
@@ -36,12 +42,6 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 0,
     paddingBottom: 0,
   },
-  root: {
-    marginBottom: theme.spacing(3),
-    [theme.breakpoints.up('md')]: {
-      marginBottom: theme.spacing(4),
-    },
-  },
   disableGutter: {
     marginBottom: 0,
   },
@@ -61,6 +61,9 @@ const useStyles = makeStyles(theme => ({
     // transform: 'translate3d(0, -50%, 0)',
     boxShadow: '0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2)',
     borderRadius: '50% !important',
+    [theme.breakpoints.down('sm')]: {
+      height: '140px',
+    },
   },
   description: {
     margin: '0 auto',
@@ -82,11 +85,10 @@ const Hero = props => {
       <Section className={classes.section}>
         <Grid
           container
-          spacing={8}
+          spacing={5}
           data-aos={'fade-up'}
           className={clsx(
             'section-header',
-            classes.root,
             classes.disableGutter,
             className,
           )}
